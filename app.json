@@ -12,7 +12,7 @@
         "SESSION": {
             "description": "Pyrogram String Session",
             "required": true
-            "value": "BAB7btBSMO_Rql3QtHsF2il8C6jWDsTHUmvKpdPclNUUW5NgTh64D-Y9VU7OwbKQ40eLNR3JZAuc1RQQB9r1dzSJAQeuBPrn0wrKO5Jd6_LoZknxDQWjInChiv8whRPrh4_-ZnAyJ_FfvDh15Dy7yof6k2fEPGaZGCoWg1KmIjQ27XPsxzmeyYNKSWYK64XTzC0EiYS2K4QFKnylGWyqwb9vkrmbqgH6qhogOb62oP7HgF4yRB8cxaIwl3UXtjAZs7D_A9HHtvCuH86GsLOPbYhEGJAMsC_FzLrDh9oFS4aXbxSxb1haNnf1nOZyA19MkiJHHuruJLuxCodPX32OHkm9AAAAAUXgjJAA"
+            "value": "1BJWap1wBu7vPKtjkqNZ3xaQVOLwPXmPGjRWiWn8VqV0qgkhyaHxs0gP-mQ1t9d8G8enAnnC3KFboV50PBaAXBMTpPgN7sXnnQVNDu6SVZGoXqghCEOE3CMzIhyGtT2rM_XJKAmGPULWYK-e33ceAum7zdA1RXTHxagRG21q0zHLoswE4en6t1dS5UZVBValiGHScW6c0GNnhUE6Kvcq4ePs3GzYHPmvUpSPwtdky5F7F9m4KflPRnV2PgjJ2kA5ZZeRNN8-jNNUN1Oss_APCi3RAoDaSHWHh6ObdXncvUxT9KkESA_U5dNZ-yArxaEcqRQe--AF_hWjVffTp3meN0f_ySrTvERE="
         },
         "API_ID": {
             "description": " APP ID fill here my.telegram.org/apps",
@@ -45,22 +45,42 @@
             "description": "fill sudo user for VC plugin ",
             "required": true
             "value": "844126468"
-        }
-    },
-    "addons": [],
-    "buildpacks": [
-        {
-            "url": "heroku/python"
-        },
-        {
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-        }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-    },
-    "stack": "container"
+ }
+
+  },
+
+  "addons": [{
+
+    "plan": "heroku-postgresql",
+
+    "options": {
+
+      "version": "12"
+
+    }
+
+  }],
+
+  "buildpacks": [{
+
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+
+  },{
+
+    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
+
+  },{
+
+    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+
+  },{
+
+    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+
+  },{
+
+    "url": "heroku/python"
+
+  }]
+
 }
