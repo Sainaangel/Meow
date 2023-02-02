@@ -12,18 +12,22 @@
         "SESSION": {
             "description": "Pyrogram String Session",
             "required": true
+            "value": "BAB7btBSMO_Rql3QtHsF2il8C6jWDsTHUmvKpdPclNUUW5NgTh64D-Y9VU7OwbKQ40eLNR3JZAuc1RQQB9r1dzSJAQeuBPrn0wrKO5Jd6_LoZknxDQWjInChiv8whRPrh4_-ZnAyJ_FfvDh15Dy7yof6k2fEPGaZGCoWg1KmIjQ27XPsxzmeyYNKSWYK64XTzC0EiYS2K4QFKnylGWyqwb9vkrmbqgH6qhogOb62oP7HgF4yRB8cxaIwl3UXtjAZs7D_A9HHtvCuH86GsLOPbYhEGJAMsC_FzLrDh9oFS4aXbxSxb1haNnf1nOZyA19MkiJHHuruJLuxCodPX32OHkm9AAAAAUXgjJAA"
         },
         "API_ID": {
             "description": " APP ID fill here my.telegram.org/apps",
             "required": true
+            "value": "6296490"
         },
         "API_HASH": {
             "description": "API hash fill here my.telegram.org/apps",
             "required": true
+            "value": "24385183c93a98ae4155c25d9f5f64b2"
         },
         "HNDLR": {
             "description": "put your command handler ,leave it if u use . as a command handler",
             "required": false
+            "value": "."
         },
         "AlIVE_MSG": {
             "description": "Enter your alive msg",
@@ -40,6 +44,7 @@
         "SUDO_USERS": {
             "description": "fill sudo user for VC plugin ",
             "required": true
+            "value": "844126468"
         }
     },
     "addons": [],
